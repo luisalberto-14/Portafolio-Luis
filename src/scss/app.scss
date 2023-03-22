@@ -1,0 +1,23 @@
+@import 'base/normalize';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,900&display=swap');
+@import 'base/variables';
+@import 'base/globales';
+@import 'base/mixins';
+@import 'base/ajustes';
+@import 'base/error';
+@import 'base/exito';
+@import 'base/spinner';
+
+
+@import 'layout/cabecera';
+@import 'layout/navegacion';
+@import 'layout/sobre-mi';
+@import 'layout/servicios';
+@import 'layout/portafolio';
+@import 'layout/formulario';
+@import 'layout/footer';
+@import 'layout/sobreMi';
+@import 'layout/serviciosPersonales';
+@import 'layout/portafolioPersonal';
+
+@import 'layout/dark-mode';

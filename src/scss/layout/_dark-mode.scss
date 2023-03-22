@@ -1,0 +1,26 @@
+.oscuro{
+	background-color: $grisOscuro;
+	color:$blanco;
+
+	p{
+		color:$blanco;
+	}
+
+	.card-portafolio{
+		background-color: $gris;
+
+	}
+
+	.servicio-frontend, .servicios-Backend {
+		p{
+			color:$negro;
+		}
+	}
+
+	.bg-color-fondo{
+			background-color:$azul;
+			font-weight: bold;
+		}
+}
+
+

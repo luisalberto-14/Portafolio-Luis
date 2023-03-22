@@ -1,0 +1,73 @@
+.footer{
+		background-color: $azulFuerte;
+		min-height: 150px;
+		margin-top: 2rem;
+
+		.barra-footer{
+			padding: 2rem 0;
+			display: flex;
+			flex-direction: column;
+			
+			@include telefono{
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			.navegador-footer{
+
+				@include telefono{
+					display:flex;
+					justify-content: center;
+					align-items: center;
+
+					a{
+						margin-right: 1rem;
+
+						&.last-of-type{
+							margin-right: 0;
+						}
+					}
+
+				}
+				a{
+					color:$blanco;
+					display:block;
+					text-align: center;
+
+				}
+			}
+
+
+
+			.img-icono{
+				width: 4.5rem;
+			}
+		}
+
+		p{
+			color:$blanco;
+			text-align: center;
+			margin: 0;
+			padding-bottom: 1rem;
+		}
+
+		.separo{
+			display:flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			@include telefono{
+				min-height: 150px;
+			}
+		}
+
+
+
+
+}
+
+
+
+
+
+

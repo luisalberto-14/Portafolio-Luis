@@ -1,0 +1,100 @@
+.barra{
+	display:flex;
+	flex-direction: column;
+	color: $blanco;
+
+	@include telefono{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+.navegacion
+{
+
+	display:none;
+	//background-color: green;
+
+
+
+	@include telefono{
+		display:flex;
+		align-items: center;
+
+	}
+	a{
+		color:$blanco;
+		font-size: 2rem;
+		display: block;
+		text-align: center;
+		padding: 1rem;
+		//border-bottom:1px solid $blanco;
+		&:hover{
+			background-color: $azulSuave;
+			@include telefono{
+				background-color: transparent;
+			}
+		}
+
+		@include tablet{
+			margin-right: 2rem;
+			border-bottom:none;
+			padding: 0;
+
+			&:last-of-type{ 
+				margin-right: 0;
+			 }
+		}
+	}
+}
+
+.centrar-menu{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mobile-menu{
+	filter:invert(100%);
+	@include telefono{
+		display:none;
+	}
+
+
+	img{
+		width: 5rem;
+		margin:0 auto;
+	}
+}
+
+.mostrar{
+	display:block;
+
+	@include tablet{
+		display:flex;
+	}
+}
+
+.derecha{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@include tablet{ 
+		align-items: flex-end;
+	 }
+
+	 .fa-solid {
+	 	font-size: 2.5rem;
+	 	&:hover{
+	 		cursor: pointer;
+	 	}
+	 }
+	// .dark-mode{/*este era para el svg sin embargo dejo de funcionar no se porque*/
+	// 	//filter:invert(100%);
+	// 	//width: 3rem;
+	// 	&:hover{
+	// 		cursor: pointer;
+	// 	}
+	// }
+}

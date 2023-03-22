@@ -1,0 +1,31 @@
+.seccion-servicios{
+	padding: 4rem;
+	.servicios{
+		p{
+			padding: 1rem;
+			
+		}
+		.servicio-frontend_servicios, .servicios-Backend_servicios {
+		background: linear-gradient(90deg, #CA91FF, #91FDFF, #9FAFFC);
+		border-radius:1rem;
+		box-shadow:10px 10px 10px $gris;
+		height: 420px;
+		color:$negro;
+			@include telefono{
+				height: 350px;
+			}
+		}
+		.fondo{
+			width: 20%;
+			height: 20%;
+		}
+		// .servicios-Backend_servicios
+		// {
+		// background: linear-gradient(90deg, #CA91FF, #91FDFF, #9FAFFC);
+		// height: 350px;
+
+		// }
+	}
+	
+}
+

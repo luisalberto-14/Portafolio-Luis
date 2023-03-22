@@ -1,0 +1,24 @@
+.seccion-portafolio{
+
+	.grid-portafolio{
+		display:grid;
+		column-gap: 3rem;
+		@include telefono{
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+		
+					
+
+		 @include tablet{ 
+			.grid-portafolio{
+			display:grid;
+			grid-template-columns: repeat(3, 1fr);
+			}
+
+		 }
+
+		
+
+
+}

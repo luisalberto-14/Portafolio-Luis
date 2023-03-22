@@ -1,0 +1,145 @@
+
+.img-icono-sobremi{
+	width:100px;
+}
+.sobre-mi{
+
+	.texto-sobre_mi{
+		line-height: 1.5;
+	}
+
+}
+
+.datos{
+	padding-bottom: 2rem;
+	.recursos{
+
+		@include telefono{
+			display:grid;
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 3rem;
+		}
+
+		.info-separacion{
+			display:flex;
+
+			.info-dividir{
+				p{
+					text-transform: capitalize;
+					padding: 1rem 0;
+					border-bottom: 1px solid $grisSuave;
+					font-weight: bold;
+
+					span{
+						font-weight: $regular;
+					}
+
+					span.texto-email{
+						text-transform: lowercase;
+					}
+				}
+
+				&:last-of-type{
+				margin-left: 2rem;
+				}
+			}
+
+			
+
+		}
+	}
+}
+
+
+.habilidades{
+	h5{
+		margin:0;
+		padding: 0;
+	}
+
+	.habilidad{
+		padding: 1rem 0;
+
+		.progress{
+		width: 100%;
+		height: 10px;
+		border-radius:10px;
+		background-color: $grisSuave;
+		position:relative;
+
+		.progress-porcentaje {
+			background-color: $rojo;
+				position:absolute;
+				
+				height: 100%;
+				border-radius:10px;
+				}
+
+
+		}
+	}
+
+	
+}
+
+.experiencia{
+	margin-bottom: 2rem;
+	.grid-sobre-mi{
+
+		@include telefono{
+			display:grid;
+			grid-template-columns: repeat(2,1fr);
+			column-gap: 4rem;
+		}
+		
+		h5{
+			text-align: center;
+			font-size: 20px;
+		}
+
+		.bg-color-fondo{
+			background-color:rgba(59,93, 209,.2);
+			max-width: 400px;
+			margin:0 auto;
+			box-shadow:5px 5px 4px 4px  $grisSuave;
+			border-radius: 1rem;
+			@include telefono{
+			
+				box-shadow:5px 5px 10px  $grisSuave;
+			}
+			.fondo-experiencia{
+				padding:4rem;
+				position:relative;
+
+
+				
+			&::before{
+					
+					content: " ";
+					position:absolute;
+					height: 95%;
+					border-left:2px solid $gris;
+					//border-bottom:2px solid $gris;
+					top:0;
+					left:2rem;
+					margin: 1rem 0;
+			}
+
+			.circle-dot{
+				position:absolute;
+				background-color: $gris;
+				width: 2rem;
+				height: 2rem;
+				border-radius:50%;
+				left:1rem;
+			}
+
+		}
+	}
+	}
+}
+.footer-sobremi{
+	p{
+		color:$blanco;
+	}
+}

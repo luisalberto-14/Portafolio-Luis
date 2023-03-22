@@ -1,0 +1,47 @@
+.servicios{
+
+	@include telefono{
+	display:grid;
+	grid-template-columns: repeat(2,1fr);
+	column-gap: 3rem;
+	color:$negro !important;
+	}
+	
+}
+
+.fondo{
+	margin:0 auto;
+	background-color: $rojo; 
+	width: 20%;
+	height: 30%;
+	border-radius:50%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	.iconos{
+	height: 5rem;
+	width: 5rem;
+	display: flex;
+	justify-content: space-evenly;
+	filter:invert(100%);
+
+	}
+}
+
+.servicio-frontend, .servicios-Backend {
+		background: linear-gradient(90deg, #CA91FF, #91FDFF, #9FAFFC);
+		border-radius:1rem;
+		box-shadow:10px 10px 10px $gris;
+		height: 420px;
+		color:$negro;
+			@include telefono{
+				height: 350px;
+			}
+		}
+		.fondo{
+			width: 20%;
+			height: 20%;
+		}
+
+
+

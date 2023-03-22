@@ -1,0 +1,244 @@
+.seccion-ajuste{
+	padding: 10px 0 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	
+	@media(min-width: 480px){
+		flex-direction: row-reverse;
+	}
+	.ajuste{
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		&:hover{
+			cursor: pointer;
+		}	
+		@include telefono{
+			margin-left: 1rem;
+		}
+	}
+
+	.contorno{
+			display:none;
+			background-color: rgba(252,252,252,0.5);
+			width: 60px;
+			height: 80px;
+			padding-top: .5rem;
+			border-radius:10px;
+			
+
+			
+			
+			
+			// color:$blanco;
+			// padding: 10px;
+
+			.color1{
+				
+				margin: 0 auto;
+				background-color: $rojo;
+				width: 20px;
+				height: 20px;
+				border-radius:50%;
+				margin-bottom: .5rem;
+			}
+			.color2{
+				
+				margin: 0 auto;
+				background-color: $azul;
+				width: 20px;
+				height: 20px;
+				border-radius:50%;
+				margin-bottom: .5rem;
+			}
+			.color3{
+				
+				margin: 0 auto;
+				background-color: $verde;
+				width: 20px;
+				height: 20px;
+				border-radius:50%;
+				margin-bottom: .5rem;
+			}
+
+			.color1:hover, .color2:hover, .color3:hover{
+				cursor: pointer;
+			}
+			
+		}
+}
+
+.contorno.mostrando{
+	display:block;
+
+			@include telefono{
+				//display: none;
+				width: 80px;
+				height: 40px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				
+			}
+}
+
+body.rojo{
+	.seccion-sobre-mi{
+		.sobremi-img::before{
+			border-bottom:10px solid $rojo;
+			border-left:10px solid $rojo;
+		}
+		.sobremi-img::after{
+			border-top:10px solid $rojo;
+			border-right:10px solid $rojo;
+		}
+
+	}
+
+	.fondo{
+		background-color: $rojo;
+	}
+
+
+	.bg-color{
+		background-color: $rojo;
+			.form-contactos{
+		background-color: $rojo;
+
+			.error{
+				background-color: $cafe;
+			}
+		}
+
+	
+	}
+	.habilidad{
+			.progress{
+				.progress-porcentaje {
+				background-color: $rojo;
+				
+					}
+			}
+		}
+	.experiencia{
+		.bg-color-fondo{
+				.fondo-experiencia{
+				&::before{
+					border-left:3px solid $rojo;
+				}
+
+				.circle-dot{
+					background-color: $rojo;
+					
+				}
+			}
+		}
+	}
+}
+
+body.azul{
+	.seccion-sobre-mi{
+		.sobremi-img::before{
+			border-bottom:10px solid $azul;
+			border-left:10px solid $azul;
+		}
+		.sobremi-img::after{
+			border-top:10px solid $azul;
+			border-right:10px solid $azul;
+		}
+
+	}
+
+	.fondo{
+		background-color: $azul;
+	}
+
+	.bg-color{
+		background-color: $azul;
+			.form-contactos{
+		background-color: $azul;
+			}
+		}
+
+	
+	.habilidad{
+			.progress{
+				.progress-porcentaje {
+				background-color: $azul;
+				
+					}
+			}
+}
+
+.experiencia{
+		.bg-color-fondo{
+				.fondo-experiencia{
+				&::before{
+					border-left:3px solid $azul;
+				}
+
+				.circle-dot{
+					background-color: $azul;
+					
+				}
+			}
+		}
+	}
+}
+
+body.verde{
+	.seccion-sobre-mi{
+		.sobremi-img::before{
+			border-bottom:10px solid $verde;
+			border-left:10px solid $verde;
+		}
+		.sobremi-img::after{
+			border-top:10px solid $verde;
+			border-right:10px solid $verde;
+		}
+
+	}
+
+	.fondo{
+		background-color: $verde;
+	}
+
+
+	.bg-color{
+		background-color: $verde;
+			.form-contactos{
+		background-color: $verde;
+			}
+		}
+
+	
+
+		.habilidad{
+			.progress{
+				.progress-porcentaje {
+				background-color: $verde;
+				
+					}
+			}
+		}
+	.experiencia{
+		.bg-color-fondo{
+				.fondo-experiencia{
+				&::before{
+					border-left:3px solid $verde;
+				}
+
+				.circle-dot{
+					background-color: $verde;
+					
+				}
+			}
+		}
+	}
+	
+	
+}
+

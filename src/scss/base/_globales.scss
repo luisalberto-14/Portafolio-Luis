@@ -1,0 +1,62 @@
+html{
+	font-size: 62.5%;
+	box-sizing:border-box;
+	scroll-behavior: smooth;
+}
+
+*,*:after, *:before{
+	box-sizing:inherit;
+}
+
+body{
+	font-family:$fontFamily ;
+	font-size: 16px;
+}
+
+.contenedor{
+	max-width: 120rem;
+	width:85%;
+	margin:0 auto;
+}
+
+p{
+	color:$negro;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+}
+
+h1{
+	font-size: $h1;
+}
+h2{
+	font-size: $h2;
+}
+h3{
+	font-size: $h3;
+}
+
+h1,h2,h3,h4{
+	text-align: center;
+}
+
+.no-center{
+	text-align: left;
+}
+
+.width-35{
+	width: 35%;
+}
+
+.width-50{
+	width: 50%;
+}
+
+.width-60{
+	width: 60%;
+}

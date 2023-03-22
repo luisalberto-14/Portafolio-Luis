@@ -1,0 +1,157 @@
+.no-webp .inicio {
+	background-image:url(../img/grande/header.jpg);
+}
+
+.webp .inicio{
+	background-image:url(../img/grande/header.webp);
+}
+
+.header{
+	height: auto;
+	background-color: $grisFuerte;
+	color:$blanco;
+	padding:3rem 0; 
+
+	@include telefono{
+		height: 200px;
+	}
+
+
+
+
+	&.inicio{
+	background-image: url("../img/grande/header.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+		height: 460px;
+		@include telefono{ 
+			min-height: 600px;
+		 }
+
+	}
+
+	p{
+		color:$blanco;
+	}
+
+	.img-icono{
+		width:  8rem;
+	}
+}
+
+	
+
+
+.logo{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	.titulo h1{
+		font-size: 35px;
+
+		@include telefono{
+			&{
+				font-size:$h1;
+			}
+		}
+
+	}
+
+
+
+	p{
+		font-size: 2.5rem;
+	}
+
+	@include telefono{
+		min-height: 500px;
+	}
+
+	#typed{
+		font-weight: bold;
+	}
+}
+
+.barra{
+	padding:0 7rem;
+}
+
+
+@include telefono{
+	.header.abajo{
+		padding: 0;
+			.barra.abajo{
+			position:  fixed;
+			background-color: $gris;
+			opacity: 0.9;
+			width: 100%;
+			height: 70px;
+			padding:1rem 7rem;
+			z-index: 100;
+
+
+			.fa-moon{
+				display: none;
+			}
+
+			.img-icono{
+				width: 50px;
+			}
+			.fa-gear{
+				font-size: 1.5rem;
+				margin-top: 0px;
+			}
+
+			.contorno{
+				background-color: $grisFuerte;
+			}
+			.color1, .color2, .color3{
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+		}
+	}	
+
+}
+
+.contenido-flecha{
+	visibility: hidden;
+}
+
+.contenido-flecha.abajo{
+	visibility: visible;
+
+}
+
+
+.fa-arrow-up{
+	font-size: 1rem;
+	color:white;
+	position:absolute;
+	position:fixed;
+	top:92%;
+	left:92%;
+	padding:1rem 1rem;
+	background-color: $gris;
+	border-radius:50%;
+
+
+	@include telefono{
+		padding:1.5rem 1.5rem;
+	}
+
+	&:hover{
+		cursor: pointer;
+		transform: scale(1.1);
+		transition: all 3000 ease;
+	}
+}
+
+
+
+
+
+
+
+

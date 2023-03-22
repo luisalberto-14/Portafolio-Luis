@@ -1,0 +1,79 @@
+.seccion-portafolio{
+
+	@include telefono{
+		.grid{
+		display:grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 3rem;
+
+		}
+		
+	}
+
+	.card-portafolio{
+		margin-bottom: 2rem;
+		padding-bottom: 2rem;
+		border-radius:10px;
+		box-shadow:10px 5px 15px $azulSuave;
+		h2{
+			font-size: 2rem;
+		}
+
+		@include telefono{
+			h2{
+				font-size:$h2;
+			}
+		}
+
+		.flex-center_direccion{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.boton-proyecto{
+				background:$morado;
+				color:$blanco;
+				padding: 1rem 3rem;
+				border-radius:1rem;
+				width: 95%;
+				text-align:center;
+
+				@include telefono{
+					width: auto;
+				}
+			}
+
+
+		}
+
+
+		.imagen-portafolio{
+			border-radius:10px;
+		}
+
+
+
+		.card-descripcion{
+			border-radius:5px;
+			padding:0 1rem;
+			line-height: 1.5;
+
+
+		}
+	}
+}
+
+#Portafolio{ 
+
+	opacity: 0;
+	transform: scale(0.9);
+	transition: .7s ease-in-out all;
+	&.izquierda{
+		transform:translateX(-30px);
+	}
+	&.visible{
+		opacity: 1;
+		transform: scale(1) translate(0PX);
+	}
+ }
+	
